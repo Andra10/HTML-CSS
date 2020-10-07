@@ -1,0 +1,369 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header { 
+    width: 100%;
+    height: 140px;
+}
+
+
+.logo img { 
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 40px ;
+}
+
+/* Hamburger Menu*/
+
+
+.trigger-drop {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+a, a:hover {
+  color: #252525;
+  text-decoration: none;
+  font-family: "Cardo", serif;
+}
+
+nav {
+  right: 0;
+  top: 0;
+  height: 50px;
+  z-index: 1000;
+  min-width: 580px;
+}
+
+
+ .links {
+  float: right;
+  margin-right: 80px;
+  position: relative;
+}
+
+.links li {
+  padding: 50px;
+  list-style: none;
+  position: relative;
+}
+
+a {
+  position: relative;
+  display:inline-block;
+}
+
+
+nav .links li > a[class^="trigger-"] {
+  padding-right: 30px;
+}
+
+.links li > a .arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 35%;
+  text-align: center;
+}
+
+.links li ul {
+  position: absolute;
+  background: white;
+  display: none;
+  padding: 20px;
+}
+.links li ul > li {
+  clear: both;
+  list-style: none;
+  display: block;
+  padding: 5px 20px;
+  margin: 0;
+  width: 100%;
+}
+nav .links li ul > li:hover {
+  background: rgb(255,180,0);
+}
+nav .links li ul > li:hover > a {
+  background: rgb(255,180,0);
+  color: white;
+}
+nav .links li:hover > .drop {
+  display: block;
+  animation: fadeInRight 0.3s ease;
+  -webkit-animation: fadeInRight 0.3s ease;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* Presentation of the Portfolio */
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+ 
+.cover img {
+  margin: 5px 50px;
+  height: 85vh;
+}
+
+
+.presentation-text h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  background: linear-gradient(to right, #252525, #7c7e86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  
+}
+
+.presentation-text h3 {
+  margin-top: 5px;
+  font-size: 26px;
+  color: #252525;
+  font-weight: 600;
+  font-family: 'Cardo', serif;
+
+}
+
+p {
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Cardo', serif;
+  font-weight: 500;
+}
+
+.contact {
+  background-color: rgb(255,180,0);
+  margin-top: 50px;
+  padding: 20px 40px;
+  border: none;
+}
+
+.contact a {
+  color: #252525;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+/* Boxes */ 
+
+.cover-two {
+
+  float: left;
+  flex: 1;
+}
+
+.cover-two img {
+  margin-top: 180px;
+  height: 80vh;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.cover-two a {
+  color: white;
+}
+
+#container{
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 300px;
+  display: grid;  
+  grid-template-columns: 200px 200px;  
+  grid-template-rows: 200px;  
+
+}
+
+.box1 {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-color: white;
+
+  
+}
+
+.box2 {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  
+ 
+ }
+
+.box3 {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+
+ }
+
+.box4 {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+}
+
+
+.box1 img {
+  margin: 50px 50px;
+
+}
+
+.box2 img {
+  margin: 50px 50px;
+}
+
+.box3 img {
+  margin: 50px 50px;
+}
+
+.box4 img {
+  margin: 50px 50px;
+}
+
+/*footer */
+
+.footer{
+  min-width: 30%;
+  min-height: 15%;
+  background-color: #252525;
+  color: rgb(255,180,0);
+  display: inline-flex;
+}
+
+.footer-section {
+  position: sticky;
+
+}
+
+.footer-icon img {
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 28px;
+}
+
+
+
+.footer-icons {
+  display: flex;
+  
+}
+
+.footer-icon {
+  flex: 1;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer-text p {
+  font-size: 15px;
+   margin-left: 5px;
+   margin-top: 35px;
+   font-family: 'Cardo', serif;
+}
+ 
+
+
+@media screen and (max-width:1024) {
+
+  header {
+  position: relative;
+  float: inline-start
+  }
+
+  .dropdown{
+    float: left;
+    position: relative;
+  }
+
+  .products ul {
+    width: 20%;
+    height: 20%;
+  }
+
+
+  .presentation {
+    flex-direction: column;
+  }
+
+  .introduction {
+    margin-top:  5vh;
+    text-align: left;
+  }
+  .intro-text h1 {
+    font-size: 20px;
+  }
+  .intro-text p {
+    font-size: 20px;
+  }
+  
+  .intro-text{
+    float: left;
+    
+  }
+
+  #container {
+    position: relative;
+    float: left;
+  }
+
+  .cover-two img {
+    bottom: 90%;
+    left: 70%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .box1 .box2 .box3 .box4 {
+    float: left;
+    margin-left: 90%;
+    position: relative;
+  }
+
+
+  .footer {
+    height: 100%;
+
+  }
+
+}

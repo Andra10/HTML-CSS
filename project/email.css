@@ -1,0 +1,86 @@
+header { 
+    width: 100%;
+    height: 140px;
+    display:flex;
+  }
+  
+  
+  .logo img { 
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 40px ;
+  }
+  
+  
+  .container{
+      text-align: center;
+      padding: 80px;
+
+
+  }
+  
+  
+  .left-div
+  {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align:center;
+    padding: 30px;
+    background-color: #252525;
+    margin: 30px;
+    vertical-align: top;
+    margin-right: 40px;
+  }
+  
+  
+  .right-div
+  {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 30px;
+    background-color:#252525;
+    margin: 30px;
+  
+  }
+  
+  .right-div button {
+  padding: 12px 25px;
+  font-size: 15px;
+  background-color: rgb(255, 180, 0);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-top: 25%;
+  }
+  
+  .left-text p {
+    margin-top: 30%;
+    color: white;
+    font-family: 'Cardo', serif;
+    font-size: 20px;
+  }
+  
+  .left-div img {
+    width: 35%;
+  }
+  
+  textarea {
+    font-family: 'Cardo', serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+  
+  
+  @media screen and (max-width: 600px) 
+  {
+    .left-div, .right-div
+      {
+         max-width: 100%;
+         margin-right: 50%;
+      }
+  }

@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header { 
+    width: 100%;
+    height: 140px;
+    
+}
+
+h6 {
+    overflow: hidden;
+    color: white;
+}
+
+
+.logo img { 
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 40px ;
+}
+
+
+.container {
+    float: right;
+    position: relative;
+    width: 500px;
+    margin: 50px;
+    padding: 20px;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #252525;
+    font-size: 18px;
+    letter-spacing: 2px; 
+    font-family: 'Oswald', sans-serif;
+}
+
+li:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgb(255, 209, 101);
+    border-radius: 1000px;
+}
+
+li:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(255,180,0);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+li.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 75%;
+    }
+}
+
+li.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 70%;
+    }
+}
+
+li.team:after {
+    animation-name: team;
+}
+
+@keyframes team {
+    to {
+        width: 75%;
+    }
+}
+
+li.ad:after {
+    animation-name: ad;
+}
+
+@keyframes ad {
+    to {
+        width: 90%;
+    }
+}
+
+li.ps:after {
+    animation-name: ps;
+}
+
+@keyframes ps{
+    to {
+        width: 80%;
+    }
+}
+
+li.curiosity:after {
+    animation-name: curiosity;
+}
+
+@keyframes curiosity {
+    to {
+        width: 100%;
+    }
+}
+
+
+
+.presentation {
+display: flex;
+width: 90%;
+margin: auto;
+min-height: 80vh;
+
+}
+
+.text {
+margin: 40px 0px;
+padding: 20px;
+line-height: 2;
+}
+
+.text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    color: rgb(255, 180, 0);
+    letter-spacing: 0.5px;
+}
+
+.text h3 {
+    font-weight: 500;
+    font-family: 'Cardo', serif;;
+}
+
+
